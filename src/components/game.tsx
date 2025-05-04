@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { useState } from 'react';
 
 // Create initial 3x3 board

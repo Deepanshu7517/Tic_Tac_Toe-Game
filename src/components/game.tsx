@@ -60,7 +60,7 @@ const Game = () => {
     };
 
     return (
-        <div className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-sans max-w-[300px] m-auto text-center rounded-2xl p-1 border-2 border-white bg-[#2C2C2C]">
+        <div className="absolute w-80 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] font-sans m-auto text-center rounded-2xl p-1 border-2 border-white bg-[#2C2C2C]">
             <div className="status text-xl flex justify-between items-center mb-5 px-2">
                 <h2 className="font-semibold text-2xl text-[#E0E0E0]">
                     {Winner
@@ -82,7 +82,7 @@ const Game = () => {
                     Reset Game
                 </button>
             </div>
-            <div className="board grid grid-cols-3 justify-center">
+            <div className="board grid grid-cols-3 justify-center h-80 w-80">
                 {Board.map((row, rowIndex) =>
                     row.map((cell, colIndex) => {
                         const rounded =
